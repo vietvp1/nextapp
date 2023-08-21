@@ -10,10 +10,6 @@
                 {
                     "key": "CDN-Cache-Control",
                     "value": "public, s-maxage=20"
-                },
-                {
-                    "key": "Vercel-CDN-Cache-Control",
-                    "value": "public, s-maxage=20"
                 }
             ]
         }
