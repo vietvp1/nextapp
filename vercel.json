@@ -1,23 +1,4 @@
 {
-    "headers": [
-        {
-            "source": "/api/test",
-            "headers": [
-                {
-                    "key": "Cache-Control",
-                    "value": "public, s-maxage=30"
-                },
-                {
-                    "key": "CDN-Cache-Control",
-                    "value": "public, s-maxage=30"
-                },
-                {
-                    "key": "Vercel-CDN-Cache-Control",
-                    "value": "public, s-maxage=30"
-                }
-            ]
-        }
-    ],
     "functions": {
         "app/api/test/route.ts": {
             "maxDuration": 5
