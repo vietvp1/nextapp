@@ -19,7 +19,7 @@
         }
     ],
     "functions": {
-        "app/api/**/*": {
+        "app/api/test/route.ts": {
             "maxDuration": 5
         }
     }
