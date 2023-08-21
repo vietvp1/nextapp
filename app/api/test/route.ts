@@ -1,4 +1,4 @@
-export const runtime = "nodejs";
+export const runtime = "edge";
 
 export async function GET() {
   const date = new Date();
@@ -6,9 +6,9 @@ export async function GET() {
   return new Response(date.toString(), {
     status: 200,
     headers: {
-      "Cache-Control": "public, s-maxage=1",
-      "CDN-Cache-Control": "public, s-maxage=60",
-      "Vercel-CDN-Cache-Control": "public, s-maxage=3600",
+      "Cache-Control": "public, s-maxage=30",
+      "CDN-Cache-Control": "public, s-maxage=30",
+      "Vercel-CDN-Cache-Control": "public, s-maxage=30",
     },
   });
 }
