@@ -6,10 +6,6 @@
                 {
                     "key": "Cache-Control",
                     "value": "public, s-maxage=20"
-                },
-                {
-                    "key": "CDN-Cache-Control",
-                    "value": "public, s-maxage=20"
                 }
             ]
         }

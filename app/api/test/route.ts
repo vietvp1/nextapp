@@ -6,7 +6,7 @@ const a = () => {
   return new Promise((rel) => {
     setTimeout(() => {
       rel(new Date());
-    }, 8000);
+    }, 5000);
   });
 };
 
