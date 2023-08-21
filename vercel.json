@@ -1,19 +1,19 @@
 {
     "headers": [
         {
-            "source": "/api/test",
+            "source": "/api/(.*)",
             "headers": [
                 {
                     "key": "Cache-Control",
-                    "value": "public, s-maxage=30"
+                    "value": "public, s-maxage=20"
                 },
                 {
                     "key": "CDN-Cache-Control",
-                    "value": "public, s-maxage=30"
+                    "value": "public, s-maxage=20"
                 },
                 {
                     "key": "Vercel-CDN-Cache-Control",
-                    "value": "public, s-maxage=30"
+                    "value": "public, s-maxage=20"
                 }
             ]
         }
