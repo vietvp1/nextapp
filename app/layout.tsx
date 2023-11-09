@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -10,9 +11,21 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const header = headers();
+
+  const country = header.get("x-vercel-ip-country");
+  const region = header.get("x-vercel-ip-country-region");
+
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+
+        <div>
+          <div>{country}</div>
+        </div>
+        <div>{region}</div>
+      </body>
       {/* <Script
         src="https://storage.googleapis.com/tagalys-front-end-components/tagalys-api-connector-1.3.2.min.js"
         type="text/javascript"
