@@ -13,6 +13,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>{children}</body>
+      {/* <Script
+        src="https://storage.googleapis.com/tagalys-front-end-components/tagalys-api-connector-1.3.2.min.js"
+        type="text/javascript"
+        strategy="beforeInteractive"
+      /> */}
     </html>
   );
 }
