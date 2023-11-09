@@ -4,7 +4,15 @@ import React, { useEffect } from "react";
 
 const CollectionPage = (props: any) => {
   useEffect(() => {
-    console.log("props :>> ", props);
+    (async function oke() {
+      try {
+        const a = await fetch("/api/geolocation");
+        const b = await a.json();
+        console.log("b :>> ", b);
+      } catch (error) {
+        console.log('error :>> ', error);
+      }
+    })();
   }, []);
 
   return (
