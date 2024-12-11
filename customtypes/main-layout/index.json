@@ -1,0 +1,212 @@
+{
+  "id": "main-layout",
+  "json": {
+    "Main": {
+      "offer_start_time": {
+        "type": "Timestamp",
+        "config": {
+          "label": "Offer start-time"
+        }
+      },
+      "offer_end_time": {
+        "type": "Timestamp",
+        "config": {
+          "label": "Offer end-time",
+          "placeholder": ""
+        }
+      },
+      "timer_title": {
+        "type": "Text",
+        "config": {
+          "label": "Timer title of product",
+          "placeholder": ""
+        }
+      }
+    },
+    "Header": {
+      "TopPromo": {
+        "type": "Text",
+        "config": {
+          "label": "Top Promo",
+          "placeholder": ""
+        }
+      },
+      "top_promo_cta": {
+        "type": "Text",
+        "config": {
+          "label": "Top Promo CTA"
+        }
+      },
+      "top_promo_link": {
+        "type": "Link",
+        "config": {
+          "label": "Top Promo Link",
+          "select": null
+        }
+      },
+      "top_promo_v2": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,preformatted,heading3,heading4,heading5,heading6,strong,em,hyperlink",
+          "allowTargetBlank": true,
+          "label": "Top Promo V2"
+        }
+      },
+      "top_promo_v2_nz": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Top Promo V2 NZ",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      },
+      "PhoneNumber": {
+        "type": "Number",
+        "config": {
+          "label": "Phone Number",
+          "placeholder": ""
+        }
+      },
+      "TopLeftMenu": {
+        "type": "Group",
+        "config": {
+          "label": "Top Left Menu",
+          "fields": {
+            "LinkName": {
+              "type": "Text",
+              "config": {
+                "label": "Link Name",
+                "placeholder": ""
+              }
+            },
+            "Link": {
+              "type": "Link",
+              "config": {
+                "label": "Link",
+                "placeholder": "",
+                "select": null
+              }
+            },
+            "collection_link_left": {
+              "type": "IntegrationFields",
+              "config": {
+                "catalog": "ozhairandbeauty--collectionstest",
+                "label": "Collection Link Left",
+                "placeholder": "Select Collection"
+              }
+            },
+            "site": {
+              "type": "Select",
+              "config": {
+                "label": "site",
+                "placeholder": "",
+                "options": ["ALL", "AU", "NZ"],
+                "default_value": "ALL"
+              }
+            }
+          }
+        }
+      },
+      "TopRightMenu": {
+        "type": "Group",
+        "config": {
+          "label": "Top Right Menu",
+          "fields": {
+            "LinkName": {
+              "type": "Text",
+              "config": {
+                "label": "Link Name",
+                "placeholder": ""
+              }
+            },
+            "Link": {
+              "type": "Link",
+              "config": {
+                "label": "Link",
+                "placeholder": "",
+                "select": null
+              }
+            },
+            "collection_link_right": {
+              "type": "IntegrationFields",
+              "config": {
+                "catalog": "ozhairandbeauty--collectionstest",
+                "label": "Collection Link Right",
+                "placeholder": "Select Collection"
+              }
+            },
+            "site": {
+              "type": "Select",
+              "config": {
+                "label": "site",
+                "placeholder": "",
+                "options": ["ALL", "AU", "NZ"],
+                "default_value": "ALL"
+              }
+            }
+          }
+        }
+      },
+      "extradata": {
+        "type": "Text",
+        "config": {
+          "label": "Extradata",
+          "placeholder": ""
+        }
+      }
+    },
+    "Footer": {
+      "HelpAndSupportLinks": {
+        "type": "Group",
+        "config": {
+          "label": "Help And Support Links",
+          "fields": {
+            "LinkName": {
+              "type": "Text",
+              "config": {
+                "label": "Link Name",
+                "placeholder": ""
+              }
+            },
+            "Link": {
+              "type": "Link",
+              "config": {
+                "label": "Link",
+                "placeholder": "",
+                "select": null
+              }
+            }
+          }
+        }
+      },
+      "SiteInfoLinks": {
+        "type": "Group",
+        "config": {
+          "label": "Site Info Links",
+          "fields": {
+            "LinkName": {
+              "type": "Text",
+              "config": {
+                "label": "Link Name",
+                "placeholder": ""
+              }
+            },
+            "Link": {
+              "type": "Link",
+              "config": {
+                "label": "Link",
+                "placeholder": "",
+                "select": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "label": "Main Layout",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

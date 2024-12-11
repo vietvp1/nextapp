@@ -1,0 +1,58 @@
+{
+  "id": "MenuLevel2",
+  "json": {
+    "Main": {
+      "MenuTitle": {
+        "type": "Text",
+        "config": {
+          "label": "Menu Title",
+          "placeholder": ""
+        }
+      },
+      "MenuLink": {
+        "type": "Link",
+        "config": {
+          "label": "Menu Link",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "collection_link": {
+        "type": "IntegrationFields",
+        "config": {
+          "catalog": "ozhairandbeauty--collectionstest",
+          "label": "Collection Link",
+          "placeholder": "collection link"
+        }
+      },
+      "SubMenuContents": {
+        "type": "Group",
+        "config": {
+          "label": "Sub Menu Contents",
+          "fields": {
+            "SubMenu": {
+              "type": "Link",
+              "config": {
+                "label": "Sub Menu",
+                "select": "document",
+                "customtypes": ["SubMenuContent"]
+              }
+            },
+            "sub_menu_collection_link": {
+              "type": "IntegrationFields",
+              "config": {
+                "catalog": "ozhairandbeauty--collectionstest",
+                "label": "Sub Menu Collection Link",
+                "placeholder": "collection link"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "label": "MenuLevel2",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

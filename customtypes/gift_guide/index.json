@@ -1,0 +1,89 @@
+{
+  "id": "gift_guide",
+  "json": {
+    "Main": {
+      "firstBanner": {
+        "type": "Group",
+        "config": {
+          "label": "firstBanner",
+          "fields": {
+            "image": {
+              "type": "Image",
+              "config": {
+                "label": "image",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "imageMobile": {
+              "type": "Image",
+              "config": {
+                "label": "imageMobile",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "link": {
+              "type": "Link",
+              "config": {
+                "label": "link",
+                "placeholder": "",
+                "select": null
+              }
+            }
+          }
+        }
+      },
+      "secondBanner": {
+        "type": "Group",
+        "config": {
+          "label": "secondBanner",
+          "fields": {
+            "image": {
+              "type": "Image",
+              "config": {
+                "label": "image",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "imageMobile": {
+              "type": "Image",
+              "config": {
+                "label": "imageMobile",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "link": {
+              "type": "Link",
+              "config": {
+                "label": "link",
+                "placeholder": "",
+                "select": null
+              }
+            }
+          }
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "shop_by_category": {
+              "type": "SharedSlice"
+            },
+            "shop_by_price": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  },
+  "label": "Gift Guide",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

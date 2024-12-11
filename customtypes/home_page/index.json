@@ -1,0 +1,189 @@
+{
+  "id": "home_page",
+  "json": {
+    "Main": {
+      "herobanner": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "slideimg": {
+              "type": "Image",
+              "config": {
+                "constraint": {},
+                "thumbnails": [
+                  {
+                    "name": "mobile",
+                    "width": 800,
+                    "height": 800
+                  }
+                ],
+                "label": "SlideImg"
+              }
+            },
+            "hidenz": {
+              "type": "Boolean",
+              "config": {
+                "default_value": false,
+                "label": "hidenz"
+              }
+            },
+            "slidelink": {
+              "type": "Link",
+              "config": {
+                "label": "SlideLink",
+                "select": null
+              }
+            },
+            "linkedproduct": {
+              "type": "IntegrationFields",
+              "config": {
+                "catalog": "ozhairandbeauty--ozhairandbeauty",
+                "label": "LinkedProduct"
+              }
+            },
+            "collection": {
+              "type": "IntegrationFields",
+              "config": {
+                "catalog": "ozhairandbeauty--collectionstest",
+                "label": "Collection",
+                "placeholder": "Select collection"
+              }
+            },
+            "site": {
+              "type": "Select",
+              "config": {
+                "label": "site",
+                "placeholder": "",
+                "options": ["ALL", "AU", "NZ"],
+                "default_value": "ALL"
+              }
+            }
+          },
+          "label": "HeroBanner"
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "shop_by_category": {
+              "type": "SharedSlice"
+            },
+            "best_sellers": {
+              "type": "SharedSlice"
+            },
+            "gift_guide": {
+              "type": "SharedSlice"
+            },
+            "shop_by_hair_type": {
+              "type": "SharedSlice"
+            },
+            "just_for_you": {
+              "type": "SharedSlice"
+            },
+            "brand": {
+              "type": "SharedSlice"
+            },
+            "current_promotions": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "Blog Section": {
+      "blog": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "heading": {
+              "type": "StructuredText",
+              "config": {
+                "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+                "label": "heading"
+              }
+            },
+            "excerpt": {
+              "type": "StructuredText",
+              "config": {
+                "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                "label": "excerpt"
+              }
+            },
+            "image": {
+              "type": "Link",
+              "config": {
+                "label": "image",
+                "select": null
+              }
+            },
+            "link": {
+              "type": "Link",
+              "config": {
+                "label": "link",
+                "select": null
+              }
+            }
+          },
+          "label": "blog"
+        }
+      },
+      "featured_blog_posts": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "feature_blog_post": {
+              "type": "Link",
+              "config": {
+                "select": "document",
+                "customtypes": ["blogpost"],
+                "tags": ["blog"],
+                "label": "Feature Blog Post"
+              }
+            }
+          },
+          "label": "Featured Blog Posts"
+        }
+      }
+    },
+    "Meta Tags": {
+      "tab_title": {
+        "type": "Text",
+        "config": {
+          "label": "Tab Title"
+        }
+      },
+      "meta_tags": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "name": {
+              "type": "Text",
+              "config": {
+                "label": "Name"
+              }
+            },
+            "content": {
+              "type": "Text",
+              "config": {
+                "label": "Content"
+              }
+            },
+            "property": {
+              "type": "Text",
+              "config": {
+                "label": "Property"
+              }
+            }
+          },
+          "label": "Meta Tags"
+        }
+      }
+    }
+  },
+  "label": "Home Page",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

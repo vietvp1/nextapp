@@ -1,0 +1,42 @@
+{
+  "id": "TopMenuLevel",
+  "json": {
+    "Main": {
+      "SubMenuContents": {
+        "type": "Group",
+        "config": {
+          "label": "Sub Menu Contents",
+          "fields": {
+            "hidenz": {
+              "type": "Boolean",
+              "config": {
+                "default_value": false,
+                "label": "hidenz"
+              }
+            },
+            "SubMenu": {
+              "type": "Link",
+              "config": {
+                "label": "Sub Menu",
+                "select": "document",
+                "customtypes": ["SubMenuContent", "MenuLevel2"]
+              }
+            },
+            "collection_link": {
+              "type": "IntegrationFields",
+              "config": {
+                "catalog": "ozhairandbeauty--collectionstest",
+                "label": "Collection Link",
+                "placeholder": "Select a Collection"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "label": "TopMenuLevel",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

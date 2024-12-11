@@ -1,0 +1,218 @@
+{
+  "id": "banner_management",
+  "json": {
+    "Main": {
+      "banners": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "banner": {
+              "type": "Image",
+              "config": {
+                "label": "Banner",
+                "constraint": {},
+                "thumbnails": [
+                  {
+                    "name": "Mobile",
+                    "width": 600,
+                    "height": 150
+                  }
+                ]
+              }
+            },
+            "link": {
+              "type": "Link",
+              "config": {
+                "allowTargetBlank": true,
+                "label": "Link",
+                "select": null
+              }
+            },
+            "tile_banner": {
+              "type": "Image",
+              "config": {
+                "constraint": {
+                  "width": 250,
+                  "height": 430
+                },
+                "thumbnails": [
+                  {
+                    "name": "mobile",
+                    "width": 157,
+                    "height": 437
+                  }
+                ],
+                "label": "Tile Banner"
+              }
+            },
+            "tile_banner_url": {
+              "type": "Link",
+              "config": {
+                "label": "Tile Banner URL",
+                "placeholder": "",
+                "select": null
+              }
+            },
+            "tile_banner1": {
+              "type": "Image",
+              "config": {
+                "label": "Tile Banner 1",
+                "constraint": {
+                  "width": 250,
+                  "height": 430
+                },
+                "thumbnails": [
+                  {
+                    "name": "mobile",
+                    "width": 157,
+                    "height": 437
+                  }
+                ]
+              }
+            },
+            "tile_banner_url1": {
+              "type": "Link",
+              "config": {
+                "label": "Tile Banner URL 1",
+                "placeholder": "",
+                "allowTargetBlank": false,
+                "select": null
+              }
+            },
+            "tile_banner2": {
+              "type": "Image",
+              "config": {
+                "label": "Tile Banner 2",
+                "constraint": {
+                  "width": 250,
+                  "height": 430
+                },
+                "thumbnails": [
+                  {
+                    "name": "mobile",
+                    "width": 157,
+                    "height": 437
+                  }
+                ]
+              }
+            },
+            "tile_banner_url2": {
+              "type": "Link",
+              "config": {
+                "label": "Tile Banner URL 2",
+                "placeholder": "",
+                "allowTargetBlank": false,
+                "select": null
+              }
+            },
+            "start_date": {
+              "type": "Date",
+              "config": {
+                "label": "Start Date"
+              }
+            },
+            "end_date": {
+              "type": "Date",
+              "config": {
+                "label": "End Date"
+              }
+            },
+            "collection1": {
+              "type": "IntegrationFields",
+              "config": {
+                "catalog": "ozhairandbeauty--collectionstest",
+                "label": "Collection 1"
+              }
+            },
+            "collection2": {
+              "type": "IntegrationFields",
+              "config": {
+                "catalog": "ozhairandbeauty--collectionstest",
+                "label": "Collection 2"
+              }
+            },
+            "collection3": {
+              "type": "IntegrationFields",
+              "config": {
+                "catalog": "ozhairandbeauty--collectionstest",
+                "label": "Collection 3"
+              }
+            },
+            "collection4": {
+              "type": "IntegrationFields",
+              "config": {
+                "catalog": "ozhairandbeauty--collectionstest",
+                "label": "Collection 4"
+              }
+            },
+            "collection5": {
+              "type": "IntegrationFields",
+              "config": {
+                "catalog": "ozhairandbeauty--collectionstest",
+                "label": "Collection 5"
+              }
+            },
+            "collection6": {
+              "type": "IntegrationFields",
+              "config": {
+                "catalog": "ozhairandbeauty--collectionstest",
+                "label": "Collection 6"
+              }
+            },
+            "collection7": {
+              "type": "IntegrationFields",
+              "config": {
+                "catalog": "ozhairandbeauty--collectionstest",
+                "label": "Collection 7"
+              }
+            },
+            "collection8": {
+              "type": "IntegrationFields",
+              "config": {
+                "catalog": "ozhairandbeauty--collectionstest",
+                "label": "Collection 8"
+              }
+            },
+            "collection9": {
+              "type": "IntegrationFields",
+              "config": {
+                "catalog": "ozhairandbeauty--collectionstest",
+                "label": "Collection 9"
+              }
+            },
+            "collection10": {
+              "type": "IntegrationFields",
+              "config": {
+                "catalog": "ozhairandbeauty--collectionstest",
+                "label": "Collection 10"
+              }
+            },
+            "hidenz": {
+              "type": "Boolean",
+              "config": {
+                "label": "hidenz",
+                "default_value": false,
+                "placeholder_true": "true",
+                "placeholder_false": "false"
+              }
+            },
+            "site": {
+              "type": "Select",
+              "config": {
+                "label": "site",
+                "placeholder": "",
+                "options": ["ALL", "AU", "NZ"],
+                "default_value": "ALL"
+              }
+            }
+          },
+          "label": "banners"
+        }
+      }
+    }
+  },
+  "label": "Banner Management",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

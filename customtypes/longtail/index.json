@@ -1,0 +1,82 @@
+{
+  "id": "longtail",
+  "json": {
+    "Main": {
+      "pages": {
+        "type": "Group",
+        "config": {
+          "label": "Pages",
+          "fields": {
+            "keyword": {
+              "type": "Text",
+              "config": {
+                "label": "Keyword",
+                "placeholder": ""
+              }
+            },
+            "url": {
+              "type": "Text",
+              "config": {
+                "label": "URL",
+                "placeholder": ""
+              }
+            },
+            "subtype": {
+              "type": "Text",
+              "config": {
+                "label": "Subtype",
+                "placeholder": ""
+              }
+            },
+            "tagsSearchPage": {
+              "type": "Text",
+              "config": {
+                "label": "TagsSearchPage",
+                "placeholder": ""
+              }
+            },
+            "metaTitle": {
+              "type": "Text",
+              "config": {
+                "label": "MetaTitle",
+                "placeholder": ""
+              }
+            },
+            "heading": {
+              "type": "Text",
+              "config": {
+                "label": "H1",
+                "placeholder": ""
+              }
+            },
+            "metaDescription": {
+              "type": "Text",
+              "config": {
+                "label": "MetaDescription",
+                "placeholder": ""
+              }
+            },
+            "bodyCopy": {
+              "type": "Text",
+              "config": {
+                "label": "BodyCopy",
+                "placeholder": ""
+              }
+            },
+            "categorySlug": {
+              "type": "Text",
+              "config": {
+                "label": "CategorySlug",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "label": "LongTail",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

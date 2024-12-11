@@ -1,0 +1,31 @@
+{
+  "id": "blogauthor",
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "AuthorID"
+        }
+      },
+      "name": {
+        "type": "Text",
+        "config": {
+          "label": "Name"
+        }
+      },
+      "picture": {
+        "type": "Image",
+        "config": {
+          "constraint": {},
+          "thumbnails": [],
+          "label": "Picture"
+        }
+      }
+    }
+  },
+  "label": "BlogAuthor",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

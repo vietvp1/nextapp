@@ -1,12 +1,17 @@
 import { NextRequest, NextResponse } from "next/server";
 
+import { geolocation } from "@vercel/functions";
+
 // run only on homepage
 // export const config = {
 //   matcher: '/',
 // }
 
 export async function middleware(req: NextRequest) {
-  const { nextUrl: url, geo } = req;
+  const {
+    nextUrl: url
+  } = req;
+  const geo = geolocation(req);
   const country = geo?.country || "US";
   const city = geo?.city || "San Francisco";
   const region = geo?.region || "CA";

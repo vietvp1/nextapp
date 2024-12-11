@@ -1,0 +1,41 @@
+{
+  "id": "search_results_page",
+  "json": {
+    "Main": {
+      "popular_category": {
+        "type": "Group",
+        "config": {
+          "label": "Popular Category",
+          "fields": {
+            "image": {
+              "type": "Image",
+              "config": {
+                "label": "image",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "title": {
+              "type": "Text",
+              "config": {
+                "label": "title",
+                "placeholder": ""
+              }
+            },
+            "category_link": {
+              "type": "IntegrationFields",
+              "config": {
+                "catalog": "ozhairandbeauty--collectionstest",
+                "label": "Category Link"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "label": "Search Results Page",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

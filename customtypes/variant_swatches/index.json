@@ -1,0 +1,48 @@
+{
+  "id": "variant_swatches",
+  "json": {
+    "Main": {
+      "swatch": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "colour_name": {
+              "type": "Text",
+              "config": {
+                "label": "Colour Name"
+              }
+            },
+            "colour_hex": {
+              "type": "Color",
+              "config": {
+                "label": "Colour Hex"
+              }
+            },
+            "colour_image": {
+              "type": "Image",
+              "config": {
+                "constraint": {
+                  "width": 100,
+                  "height": 100
+                },
+                "thumbnails": [],
+                "label": "Colour Image"
+              }
+            },
+            "variant_sku": {
+              "type": "Text",
+              "config": {
+                "label": "Variant SKU"
+              }
+            }
+          },
+          "label": "Swatch"
+        }
+      }
+    }
+  },
+  "label": "Variant Swatches",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

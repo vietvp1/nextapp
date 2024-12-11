@@ -1,0 +1,10 @@
+{
+  "id": "menuRow",
+  "json": {
+    "Main": {}
+  },
+  "label": "Menu",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

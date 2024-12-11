@@ -1,0 +1,44 @@
+{
+  "id": "salonservice",
+  "json": {
+    "Main": {
+      "name": {
+        "type": "Text",
+        "config": {
+          "label": "name",
+          "placeholder": ""
+        }
+      },
+      "description": {
+        "type": "Text",
+        "config": {
+          "label": "description",
+          "placeholder": ""
+        }
+      },
+      "serviceType": {
+        "type": "Select",
+        "config": {
+          "label": "serviceType",
+          "placeholder": "",
+          "options": ["hair", "skin"]
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "hair_service": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  },
+  "label": "Salon Service",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

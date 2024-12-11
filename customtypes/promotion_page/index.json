@@ -1,0 +1,152 @@
+{
+  "id": "promotion_page",
+  "json": {
+    "Main": {
+      "main_banner": {
+        "type": "Image",
+        "config": {
+          "constraint": {},
+          "thumbnails": [
+            {
+              "name": "mobile",
+              "width": 400,
+              "height": 400
+            }
+          ],
+          "label": "Main Banner"
+        }
+      },
+      "collection_handle": {
+        "type": "Text",
+        "config": {
+          "label": "Collection Handle"
+        }
+      },
+      "collection": {
+        "type": "IntegrationFields",
+        "config": {
+          "catalog": "ozhairandbeauty--collectionstest",
+          "label": "Collection",
+          "placeholder": "Select Collection"
+        }
+      },
+      "hidenz": {
+        "type": "Boolean",
+        "config": {
+          "label": "hidenz",
+          "default_value": false,
+          "placeholder_true": "true",
+          "placeholder_false": "false"
+        }
+      },
+      "promotion": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "promo_banner": {
+              "type": "Image",
+              "config": {
+                "constraint": {},
+                "thumbnails": [
+                  {
+                    "name": "mobile",
+                    "width": 600,
+                    "height": 380
+                  }
+                ],
+                "label": "Promo Banner"
+              }
+            },
+            "promo_name": {
+              "type": "Text",
+              "config": {
+                "label": "Promo Name"
+              }
+            },
+            "promo_collection_handle": {
+              "type": "Text",
+              "config": {
+                "label": "Promo Collection Handle"
+              }
+            },
+            "promo_collection": {
+              "type": "IntegrationFields",
+              "config": {
+                "catalog": "ozhairandbeauty--collectionstest",
+                "label": "Promo Collection",
+                "placeholder": "Select Collection"
+              }
+            },
+            "promo_category": {
+              "type": "Text",
+              "config": {
+                "label": "Promo Category"
+              }
+            },
+            "button_text": {
+              "type": "Text",
+              "config": {
+                "label": "Button Text"
+              }
+            },
+            "button_bg_color": {
+              "type": "Color",
+              "config": {
+                "label": "Button Bg Color"
+              }
+            },
+            "button_text_color": {
+              "type": "Color",
+              "config": {
+                "label": "Button Text Color"
+              }
+            },
+            "related_promo_product_1": {
+              "type": "IntegrationFields",
+              "config": {
+                "catalog": "ozhairandbeauty--ozhairandbeauty",
+                "label": "Related Promo Product 1"
+              }
+            },
+            "related_promo_product_2": {
+              "type": "IntegrationFields",
+              "config": {
+                "catalog": "ozhairandbeauty--ozhairandbeauty",
+                "label": "Related Promo Product 2"
+              }
+            },
+            "related_promo_product_3": {
+              "type": "IntegrationFields",
+              "config": {
+                "catalog": "ozhairandbeauty--ozhairandbeauty",
+                "label": "Related Promo Product 3"
+              }
+            },
+            "test_blog": {
+              "type": "Link",
+              "config": {
+                "select": "document",
+                "customtypes": ["blogpost"],
+                "label": "test_blog"
+              }
+            },
+            "hidenz": {
+              "type": "Boolean",
+              "config": {
+                "label": "hidenz",
+                "default_value": false,
+                "placeholder_true": "true",
+                "placeholder_false": "false"
+              }
+            }
+          },
+          "label": "Promotion"
+        }
+      }
+    }
+  },
+  "label": "Promotion Page",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

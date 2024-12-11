@@ -1,0 +1,156 @@
+{
+  "id": "location",
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "slug",
+          "placeholder": ""
+        }
+      },
+      "name": {
+        "type": "Text",
+        "config": {
+          "label": "name",
+          "placeholder": ""
+        }
+      },
+      "address": {
+        "type": "Text",
+        "config": {
+          "label": "address",
+          "placeholder": ""
+        }
+      },
+      "description": {
+        "type": "StructuredText",
+        "config": {
+          "label": "description",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      },
+      "coordinate": {
+        "type": "GeoPoint",
+        "config": {
+          "label": "coordinate"
+        }
+      },
+      "phone": {
+        "type": "Text",
+        "config": {
+          "label": "phone",
+          "placeholder": ""
+        }
+      },
+      "direction": {
+        "type": "Link",
+        "config": {
+          "label": "direction",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "iframe_booking": {
+        "type": "Text",
+        "config": {
+          "label": "Iframe Booking"
+        }
+      },
+      "call_for_booking": {
+        "type": "Boolean",
+        "config": {
+          "default_value": false,
+          "label": "Call for Booking"
+        }
+      },
+      "openingHours": {
+        "type": "Group",
+        "config": {
+          "label": "Opening Hours",
+          "fields": {
+            "weekDay": {
+              "type": "Text",
+              "config": {
+                "label": "Day Of The Week",
+                "placeholder": ""
+              }
+            },
+            "openTime": {
+              "type": "Text",
+              "config": {
+                "label": "openTime",
+                "placeholder": ""
+              }
+            },
+            "closeTime": {
+              "type": "Text",
+              "config": {
+                "label": "closeTime",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      },
+      "images": {
+        "type": "Group",
+        "config": {
+          "label": "images",
+          "fields": {
+            "image": {
+              "type": "Image",
+              "config": {
+                "label": "image",
+                "constraint": {},
+                "thumbnails": []
+              }
+            }
+          }
+        }
+      },
+      "indicators": {
+        "type": "Group",
+        "config": {
+          "label": "indicators",
+          "fields": {
+            "name": {
+              "type": "Text",
+              "config": {
+                "label": "name",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      },
+      "metaTitle": {
+        "type": "Text",
+        "config": {
+          "label": "Meta Title",
+          "placeholder": ""
+        }
+      },
+      "metaDescription": {
+        "type": "Text",
+        "config": {
+          "label": "Meta Description",
+          "placeholder": ""
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {}
+        }
+      }
+    }
+  },
+  "label": "Location",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

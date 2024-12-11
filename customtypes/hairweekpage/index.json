@@ -1,0 +1,65 @@
+{
+  "id": "hairweekpage",
+  "json": {
+    "Main": {
+      "promo_definition": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "start_date": {
+              "type": "Date",
+              "config": {
+                "label": "Start Date"
+              }
+            },
+            "title": {
+              "type": "Text",
+              "config": {
+                "label": "Title"
+              }
+            },
+            "desc": {
+              "type": "Text",
+              "config": {
+                "label": "Desc"
+              }
+            },
+            "product_one": {
+              "type": "IntegrationFields",
+              "config": {
+                "catalog": "ozhairandbeauty--ozhairandbeauty",
+                "label": "Product one"
+              }
+            },
+            "product_two": {
+              "type": "IntegrationFields",
+              "config": {
+                "catalog": "ozhairandbeauty--ozhairandbeauty",
+                "label": "Product two"
+              }
+            },
+            "product_three": {
+              "type": "IntegrationFields",
+              "config": {
+                "catalog": "ozhairandbeauty--ozhairandbeauty",
+                "label": "Product Three"
+              }
+            },
+            "product_four": {
+              "type": "IntegrationFields",
+              "config": {
+                "catalog": "ozhairandbeauty--ozhairandbeauty",
+                "label": "Product Four"
+              }
+            }
+          },
+          "label": "Promo Definition"
+        }
+      }
+    }
+  },
+  "label": "HairWeekPage",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

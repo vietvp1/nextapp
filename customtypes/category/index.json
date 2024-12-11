@@ -1,0 +1,234 @@
+{
+  "id": "category",
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "Slug"
+        }
+      },
+      "real_collection": {
+        "type": "IntegrationFields",
+        "config": {
+          "catalog": "ozhairandbeauty--collectionstest",
+          "label": "Real Collection"
+        }
+      },
+      "parent_category": {
+        "type": "Link",
+        "config": {
+          "select": "document",
+          "customtypes": ["category"],
+          "label": "Parent Category"
+        }
+      },
+      "ia_is_on": {
+        "type": "Boolean",
+        "config": {
+          "default_value": false,
+          "label": "Is IA ON?"
+        }
+      },
+      "link": {
+        "type": "Link",
+        "config": {
+          "allowTargetBlank": true,
+          "label": "Link",
+          "select": null
+        }
+      },
+      "left_menu": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "sub_category_image": {
+              "type": "Image",
+              "config": {
+                "constraint": {},
+                "thumbnails": [],
+                "label": "Left Menu Image"
+              }
+            },
+            "left_collection": {
+              "type": "IntegrationFields",
+              "config": {
+                "catalog": "ozhairandbeauty--collectionstest",
+                "label": "Left Collection"
+              }
+            },
+            "left_menu_link": {
+              "type": "Link",
+              "config": {
+                "label": "Left Menu Link",
+                "select": null
+              }
+            },
+            "left_menu_title": {
+              "type": "Text",
+              "config": {
+                "label": "Left Menu Title"
+              }
+            }
+          },
+          "label": "Left Menu"
+        }
+      },
+      "banner": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 1380,
+            "height": 355
+          },
+          "thumbnails": [
+            {
+              "name": "Mobile",
+              "width": 600,
+              "height": 150
+            }
+          ],
+          "label": "Banner"
+        }
+      },
+      "tile_banner": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 243,
+            "height": 418
+          },
+          "thumbnails": [
+            {
+              "name": "mobile",
+              "width": 150,
+              "height": 417
+            }
+          ],
+          "label": "Tile Banner"
+        }
+      },
+      "tile_banner_link": {
+        "type": "Link",
+        "config": {
+          "label": "Tile Banner Link",
+          "select": null
+        }
+      },
+      "description": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+          "label": "Description"
+        }
+      },
+      "faqs": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "collection_question": {
+              "type": "Text",
+              "config": {
+                "label": "Collection Question"
+              }
+            },
+            "collections_answer": {
+              "type": "Text",
+              "config": {
+                "label": "Collections Answer"
+              }
+            }
+          },
+          "label": "FAQs"
+        }
+      },
+      "brands": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "brand_logo": {
+              "type": "Image",
+              "config": {
+                "constraint": {},
+                "thumbnails": [],
+                "label": "Brand Logo"
+              }
+            },
+            "brand_collection": {
+              "type": "IntegrationFields",
+              "config": {
+                "catalog": "ozhairandbeauty--collectionstest",
+                "label": "Brand Collection"
+              }
+            },
+            "brand_link": {
+              "type": "Link",
+              "config": {
+                "label": "Brand Link",
+                "select": null
+              }
+            }
+          },
+          "label": "Brands"
+        }
+      },
+      "internal_links": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "link_title": {
+              "type": "Text",
+              "config": {
+                "label": "Link Title"
+              }
+            },
+            "link_collection": {
+              "type": "IntegrationFields",
+              "config": {
+                "catalog": "ozhairandbeauty--collectionstest",
+                "label": "Link Collection"
+              }
+            },
+            "link_for_link": {
+              "type": "Link",
+              "config": {
+                "label": "Link for Link",
+                "select": null
+              }
+            }
+          },
+          "label": "Internal Links"
+        }
+      },
+      "tagalys_widget_id": {
+        "type": "Text",
+        "config": {
+          "label": "Tagalys Widget ID",
+          "placeholder": ""
+        }
+      },
+      "show_description_on_top": {
+        "type": "Boolean",
+        "config": {
+          "label": "Show Description On Top",
+          "default_value": false,
+          "placeholder_true": "true",
+          "placeholder_false": "false"
+        }
+      },
+      "hidenz": {
+        "type": "Boolean",
+        "config": {
+          "label": "hidenz",
+          "default_value": false,
+          "placeholder_true": "true",
+          "placeholder_false": "false"
+        }
+      }
+    }
+  },
+  "label": "Category",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

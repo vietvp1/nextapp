@@ -1,0 +1,87 @@
+{
+  "id": "SubMenuContent",
+  "json": {
+    "Main": {
+      "menutitle": {
+        "type": "Text",
+        "config": {
+          "label": "MenuTitle"
+        }
+      },
+      "MenuLink": {
+        "type": "Link",
+        "config": {
+          "label": "Menu Link",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "link_to_collection": {
+        "type": "IntegrationFields",
+        "config": {
+          "catalog": "ozhairandbeauty--collectionstest",
+          "label": "Link to Collection",
+          "placeholder": "Collection Link"
+        }
+      },
+      "colour": {
+        "type": "Color",
+        "config": {
+          "label": "colour"
+        }
+      },
+      "products": {
+        "type": "IntegrationFields",
+        "config": {
+          "catalog": "ozhairandbeauty--ozhairandbeauty",
+          "label": "products"
+        }
+      },
+      "menulayer": {
+        "type": "Boolean",
+        "config": {
+          "default_value": false,
+          "label": "MenuLayer"
+        }
+      },
+      "linkonly": {
+        "type": "Boolean",
+        "config": {
+          "default_value": false,
+          "label": "LinkOnlyDesktop"
+        }
+      },
+      "linkonlymobile": {
+        "type": "Boolean",
+        "config": {
+          "default_value": false,
+          "label": "linkOnlyMobile"
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "menu_navigation_item": {
+              "type": "SharedSlice"
+            },
+            "menu_feature_blog": {
+              "type": "SharedSlice"
+            },
+            "menu_feature_product": {
+              "type": "SharedSlice"
+            },
+            "menu_feature_promotion": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  },
+  "label": "Sub Menu Content",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

@@ -1,0 +1,302 @@
+{
+  "id": "old_home_page",
+  "json": {
+    "Main": {
+      "banner": {
+        "type": "Text",
+        "config": {
+          "label": "Banner",
+          "placeholder": ""
+        }
+      },
+      "herobanner": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "slideimg": {
+              "type": "Image",
+              "config": {
+                "constraint": {},
+                "thumbnails": [
+                  {
+                    "name": "mobile",
+                    "width": 800,
+                    "height": 800
+                  }
+                ],
+                "label": "SlideImg"
+              }
+            },
+            "slidelink": {
+              "type": "Link",
+              "config": {
+                "label": "SlideLink",
+                "select": null
+              }
+            },
+            "linkedproduct": {
+              "type": "IntegrationFields",
+              "config": {
+                "catalog": "ozhairandbeauty--ozhairandbeauty",
+                "label": "LinkedProduct"
+              }
+            },
+            "collection": {
+              "type": "IntegrationFields",
+              "config": {
+                "catalog": "ozhairandbeauty--collectionstest",
+                "label": "Collection",
+                "placeholder": "Select collection"
+              }
+            }
+          },
+          "label": "HeroBanner"
+        }
+      }
+    },
+    "Brand": {
+      "brand_heading": {
+        "type": "Text",
+        "config": {
+          "label": "Brand heading",
+          "placeholder": ""
+        }
+      },
+      "brand_description": {
+        "type": "Text",
+        "config": {
+          "label": "Brand description",
+          "placeholder": ""
+        }
+      },
+      "brand_cta": {
+        "type": "Link",
+        "config": {
+          "label": "Brand cta",
+          "select": null
+        }
+      },
+      "collectionlink": {
+        "type": "IntegrationFields",
+        "config": {
+          "catalog": "ozhairandbeauty--collectionstest",
+          "label": "CollectionLink",
+          "placeholder": "Choose a collection"
+        }
+      },
+      "brands": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "logo": {
+              "type": "Image",
+              "config": {
+                "constraint": {},
+                "thumbnails": [],
+                "label": "Logo"
+              }
+            },
+            "brand-link": {
+              "type": "Link",
+              "config": {
+                "label": "brand link",
+                "select": null
+              }
+            },
+            "brand_collection_link": {
+              "type": "IntegrationFields",
+              "config": {
+                "catalog": "ozhairandbeauty--collectionstest",
+                "label": "Brand Collection Link",
+                "placeholder": "Choose a collection"
+              }
+            }
+          },
+          "label": "brands"
+        }
+      }
+    },
+    "Blog Section": {
+      "blog": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "heading": {
+              "type": "StructuredText",
+              "config": {
+                "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+                "label": "heading"
+              }
+            },
+            "excerpt": {
+              "type": "StructuredText",
+              "config": {
+                "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                "label": "excerpt"
+              }
+            },
+            "image": {
+              "type": "Link",
+              "config": {
+                "label": "image",
+                "select": null
+              }
+            },
+            "link": {
+              "type": "Link",
+              "config": {
+                "label": "link",
+                "select": null
+              }
+            }
+          },
+          "label": "blog"
+        }
+      },
+      "featured_blog_posts": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "feature_blog_post": {
+              "type": "Link",
+              "config": {
+                "select": "document",
+                "customtypes": ["blogpost"],
+                "tags": ["blog"],
+                "label": "Feature Blog Post"
+              }
+            }
+          },
+          "label": "Featured Blog Posts"
+        }
+      }
+    },
+    "Product Recommender": {
+      "product_recommender": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "tab_name": {
+              "type": "Text",
+              "config": {
+                "label": "Tab Name"
+              }
+            },
+            "collection_id": {
+              "type": "Number",
+              "config": {
+                "label": "Collection Id"
+              }
+            },
+            "recommender_collection": {
+              "type": "IntegrationFields",
+              "config": {
+                "catalog": "ozhairandbeauty--collectionstest",
+                "label": "Recommender Collection",
+                "placeholder": "Select Collection"
+              }
+            },
+            "is_emarsys_api_enabled": {
+              "type": "Boolean",
+              "config": {
+                "default_value": false,
+                "label": "Is Emarsys API Enabled"
+              }
+            },
+            "emarsys_logic_name": {
+              "type": "Text",
+              "config": {
+                "label": "Emarsys Logic Name"
+              }
+            }
+          },
+          "label": "Product Recommender"
+        }
+      }
+    },
+    "Current Promotions": {
+      "promotions": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "heading": {
+              "type": "Text",
+              "config": {
+                "label": "heading"
+              }
+            },
+            "description": {
+              "type": "Text",
+              "config": {
+                "label": "Description"
+              }
+            },
+            "image": {
+              "type": "Link",
+              "config": {
+                "allowTargetBlank": true,
+                "label": "Image",
+                "select": null
+              }
+            },
+            "path": {
+              "type": "Link",
+              "config": {
+                "allowTargetBlank": true,
+                "label": "Path",
+                "select": null
+              }
+            },
+            "promotion_collection_link": {
+              "type": "IntegrationFields",
+              "config": {
+                "catalog": "ozhairandbeauty--collectionstest",
+                "label": "Promotion Collection Link",
+                "placeholder": "Choose Collection"
+              }
+            }
+          },
+          "label": "Promotions"
+        }
+      }
+    },
+    "Meta Tags": {
+      "tab_title": {
+        "type": "Text",
+        "config": {
+          "label": "Tab Title"
+        }
+      },
+      "meta_tags": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "name": {
+              "type": "Text",
+              "config": {
+                "label": "Name"
+              }
+            },
+            "content": {
+              "type": "Text",
+              "config": {
+                "label": "Content"
+              }
+            },
+            "property": {
+              "type": "Text",
+              "config": {
+                "label": "Property"
+              }
+            }
+          },
+          "label": "Meta Tags"
+        }
+      }
+    }
+  },
+  "label": "Old Home Page",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

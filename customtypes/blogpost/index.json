@@ -1,0 +1,94 @@
+{
+  "id": "blogpost",
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "slug"
+        }
+      },
+      "title": {
+        "type": "StructuredText",
+        "config": {
+          "single": "heading1",
+          "label": "Title"
+        }
+      },
+      "article_image": {
+        "type": "Image",
+        "config": {
+          "constraint": {},
+          "thumbnails": [],
+          "label": "Article Image"
+        }
+      },
+      "author": {
+        "type": "Link",
+        "config": {
+          "select": "document",
+          "customtypes": ["blogauthor"],
+          "label": "Author"
+        }
+      },
+      "category": {
+        "type": "Text",
+        "config": {
+          "label": "Category"
+        }
+      },
+      "relatedproducts": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "relatedproduct": {
+              "type": "IntegrationFields",
+              "config": {
+                "catalog": "ozhairandbeauty--ozhairandbeauty",
+                "label": "RelatedProduct"
+              }
+            }
+          },
+          "label": "RelatedProducts"
+        }
+      },
+      "created_at": {
+        "type": "Date",
+        "config": {
+          "label": "Created At"
+        }
+      },
+      "tags": {
+        "type": "Text",
+        "config": {
+          "label": "Tags"
+        }
+      },
+      "body_html": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+          "label": "Body Html"
+        }
+      },
+      "meta_title": {
+        "type": "Text",
+        "config": {
+          "label": "Meta Title",
+          "placeholder": ""
+        }
+      },
+      "meta_description": {
+        "type": "Text",
+        "config": {
+          "label": "Meta Description",
+          "placeholder": ""
+        }
+      }
+    }
+  },
+  "label": "BlogPost",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

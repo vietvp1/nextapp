@@ -1,0 +1,22 @@
+{
+  "id": "NavigationList",
+  "json": {
+    "Main": {
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "menu_navigation_item": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  },
+  "label": "NavigationList",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

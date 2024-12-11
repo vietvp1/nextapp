@@ -1,0 +1,22 @@
+{
+  "id": "brandtest",
+  "json": {
+    "Main": {
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "brand_navigation_lists": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  },
+  "label": "BrandMenuData",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}
