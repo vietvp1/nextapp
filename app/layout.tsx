@@ -1,3 +1,4 @@
+import ShopifyAnalytics from "@/components/ShopifyAnalytics";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -16,6 +17,7 @@ export default function RootLayout({
         <p>aaaaaaaaaaaaaaaaa</p>
         <p>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</p>
         {children}
+        <ShopifyAnalytics/>
       </body>
     </html>
   );
