@@ -10,7 +10,9 @@ export default withSentryConfig(nextConfig, {
   // https://www.npmjs.com/package/@sentry/webpack-plugin#options
   org: "viettest",
 
-  project: "viettest-nextjs",
+  project: "javascript-nextjs",
+
+  authToken: process.env.SENTRY_AUTH_TOKEN,
 
   // Only print logs for uploading source maps in CI
   silent: !process.env.CI,
@@ -27,17 +29,17 @@ export default withSentryConfig(nextConfig, {
   // side errors will fail.
   tunnelRoute: "/monitoring",
 
-  webpack: {
-    // Enables automatic instrumentation of Vercel Cron Monitors. (Does not yet work with App Router route handlers.)
-    // See the following for more information:
-    // https://docs.sentry.io/product/crons/
-    // https://vercel.com/docs/cron-jobs
-    automaticVercelMonitors: true,
+  // webpack: {
+  //   // Enables automatic instrumentation of Vercel Cron Monitors. (Does not yet work with App Router route handlers.)
+  //   // See the following for more information:
+  //   // https://docs.sentry.io/product/crons/
+  //   // https://vercel.com/docs/cron-jobs
+  //   automaticVercelMonitors: true,
 
-    // Tree-shaking options for reducing bundle size
-    treeshake: {
-      // Automatically tree-shake Sentry logger statements to reduce bundle size
-      removeDebugLogging: true,
-    },
-  }
+  //   // Tree-shaking options for reducing bundle size
+  //   treeshake: {
+  //     // Automatically tree-shake Sentry logger statements to reduce bundle size
+  //     removeDebugLogging: true,
+  //   },
+  // },
 });
